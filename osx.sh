@@ -1,6 +1,3 @@
-# TODO Setup script to install oceanic next theme colors for iterm 2
-# TODO replace sublime.settings file with file from AWeber machine
-
 #!/usr/bin/env bash
 
 # ~/osx.sh — Originally from https://mths.be/osx
