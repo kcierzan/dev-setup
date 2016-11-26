@@ -2,7 +2,7 @@
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-# pull from my development branch branch - may have to change to master
+# pull from my development branch branch - may have to change to master eventually
 git pull origin develop;
 
 function doIt() {

@@ -45,7 +45,7 @@ sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
 #Add ZSH to the list of shells
 sudo bash -c 'echo /usr/local/bin/zsh >> /etc/shells'
 # Change to the new shell, prompts for password
-chsh -s /usr/local/bin/zsh
+chsh -s /usr/bin/zsh
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
@@ -151,14 +151,15 @@ brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" evernote
 brew cask install --appdir="/Applications" 1password
-brew cask install --appdir="/Applications" adobe-photoshop-cc
-brew cask install --appdir="/Applications" adobe-photoshop-lightroom
-brew cask install --appdir="/Applications" adobe-illustrator-cc
 brew cask install --appdir="/Applications" karabiner
 brew cask install --appdir="/Applications" seil
 brew cask install --appdir="/Applications" spectacle
 brew cask install --appdir="/Applications" flux
 brew cask install --appdir="/Applications" blockblock
+brew cask install --appdir="/Applications" keka
+brew cask install --appdir="/Applications" steam
+brew cask install --appdir="/Applications" vlc
+brew cask install --appdir="/Applications" spotify
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
