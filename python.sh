@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Install command-line tools using Homebrew.
+# Install Pynthon and Python libraries using Homebrew.
 
 # Ask for the administrator password upfront.
 sudo -v
@@ -18,14 +18,15 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install node
-
-# Remove outdated versions from the cellar.
-brew cleanup
-
-# npm install -g coffee-script
-npm install -g grunt-cli
-# npm install -g jshint
-# npm install -g sass
-
-#gem install jekyll
+#
+brew install python
+brew install python3
+# Check to see if we have pip, if we do upgrade, if we don't, get it
+if test ! $(which pip); then
+    echo "Installing pip..."
+    python get-pip.py
+# Install virtualenv
+# Install virtualenvwrapper
+# Install pyenv
+# Install flake8
+# Install flask
